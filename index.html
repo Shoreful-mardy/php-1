@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <script>
+        var num=[];
+        ///get the array value 
+        for(var i=0;i<5;i++)
+        {
+            num[i]= parseFloat(prompt(i + "Enter a array number : "));
+        }
+        //// printing value 
+        for(var j=0;j<num.length;j++)
+        {
+            document.write(num[j],',');
+        }
+    /// compare to another index and get the hightscore value ;
+    var highScore = num[0];
+    for(var k = 1;k<num.length;k++){
+        if(highScore<num[k])
+        {
+            highScore = num[k];
+        }
+    }
+    document.write("<br> hight score : " + highScore);
+    // var num =;
+    // var highScore = num[0];
+    
+    // for(i=1;i<num.length;i++)
+    // {
+    //    if(highScore<num[i])
+    //    {
+    //     highScore = num[i];
+    //    }
+    // }
+    // document.write("Hight score: " + highScore);
+    </script>
+</body>
+</html>
